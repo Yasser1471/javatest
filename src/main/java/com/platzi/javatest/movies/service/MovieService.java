@@ -11,13 +11,12 @@ public class MovieService {
     private MovieRepositor movieRepositor;
 
     public MovieService(MovieRepositor movieRepositor){
-
         this.movieRepositor = movieRepositor;
     }
 
     public Collection<Movie> findMoviesByGenre(Genre genre) {
 
-       Collection<Movie> allMovies = movieRepositor.findAll();
+        Collection<Movie> allMovies = movieRepositor.findAll();
 
        return allMovies;
     }
